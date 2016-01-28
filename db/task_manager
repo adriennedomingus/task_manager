@@ -1,6 +1,6 @@
 ---
 tasks:
 - id: 1
-  title: Do this
-  description: ' Finish tutorial'
+  title: task 2
+  description: "Another task\r\n"
 total: 1

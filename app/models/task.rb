@@ -6,5 +6,4 @@ class Task
     @title = data["title"]
     @description = data["description"]
   end
-
 end
