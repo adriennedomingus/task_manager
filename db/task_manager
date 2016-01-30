@@ -3,4 +3,11 @@ tasks:
 - id: 1
   title: task 2
   description: "Another task\r\n"
-total: 1
+- id: 2
+  title: task 3
+  description: Longer descriptionLonger descriptionLonger descriptionLonger descriptionLonger
+    descriptionLonger descriptionLonger description
+- id: 3
+  title: task 4
+  description: Describing again
+total: 3
