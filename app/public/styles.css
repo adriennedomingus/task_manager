@@ -5,3 +5,11 @@
 h1 {
   margin-left: 15px;
 }
+
+#new-task-form {
+  margin-left: 15px;
+}
+
+.form-component {
+  margin-top: 10px;
+}
