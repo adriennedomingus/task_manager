@@ -13,4 +13,7 @@ tasks:
 - id: 4
   title: task 5
   description: testing new button
-total: 4
+- id: 5
+  title: Yet another
+  description: yep
+total: 5

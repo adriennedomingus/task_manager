@@ -12,6 +12,8 @@ h1 {
 
 .form-component {
   margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: none;
 }
 
 .banner {
