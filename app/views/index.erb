@@ -2,7 +2,7 @@
     <div class="container">
       <div class="row">
         <% @tasks.each do |task| %>
-        <div class="col-md-4">
+        <div class="col-md-4" id="tasks">
           <h3><%= task.id %>: <a href="/tasks/<%= task.id %>"><%= task.title %></a></h3>
           <a href="/tasks/<%= task.id %>/edit">Edit</a>
           <form action="/tasks/<%= task.id %>" method="POST">

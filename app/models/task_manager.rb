@@ -34,8 +34,8 @@ class TaskManager
 
   def update(task, id)
     database.transaction do
-      task_to_edit = database['tasks'].find do |task|
-        task['id'] == id
+      task_to_edit = database['tasks'].find do |the_task|
+        the_task['id'] == id
       end
       task_to_edit['title'] = task['title']
       task_to_edit['description'] = task['description']
@@ -45,6 +45,13 @@ class TaskManager
   def delete(id)
     database.transaction do
       database['tasks'].delete_if { |task| task["id"] == id }
+    end
+  end
+
+  def delete_all
+    database.transaction do
+      database['tasks'] = []
+      database['total'] = 0
     end
   end
 end
