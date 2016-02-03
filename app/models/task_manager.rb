@@ -1,6 +1,3 @@
-require 'yaml/store'
-require_relative 'task'
-
 class TaskManager
   attr_reader :database
 
@@ -42,6 +39,12 @@ class TaskManager
       end
       task_to_edit['title'] = task['title']
       task_to_edit['description'] = task['description']
+    end
+  end
+
+  def delete(id)
+    database.transaction do
+      database['tasks'].delete_if { |task| task["id"] == id }
     end
   end
 end

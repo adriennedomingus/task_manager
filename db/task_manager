@@ -16,7 +16,4 @@ tasks:
 - id: 5
   title: Yet another
   description: yep
-- id: 6
-  title: task 2
-  description: "Another new task\r\n"
 total: 6
