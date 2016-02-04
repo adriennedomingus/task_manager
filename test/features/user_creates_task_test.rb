@@ -22,6 +22,5 @@ class UserCreatesTaskTest < Minitest::Test
     within("#tasks") do
       assert page.has_content?("Title for my task")
     end
-
   end
 end
